@@ -1,0 +1,18 @@
+.conteiner {
+    background-color: var(--cinza-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.titulo {
+    color: var(--cinza-escuro1);
+    font-size: 1.125rem;
+}
+
+@media (max-width: 480px) {
+  .conteiner { padding: 0.6rem; }
+  .titulo { font-size: 1rem; }
+}

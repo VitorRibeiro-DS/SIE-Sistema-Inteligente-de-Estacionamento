@@ -1,0 +1,22 @@
+.conteiner{
+    background-color: var(--preto);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.mensagemErro {
+    color: var(--azul-claro);
+    font-size: 1.3rem;
+    margin-top: 100px;
+}
+
+@media (max-width: 480px) {
+    .conteiner { justify-content: center; gap: 0.5rem; }
+    .mensagemErro { font-size: 1.1rem; margin-top: 40px; }
+}

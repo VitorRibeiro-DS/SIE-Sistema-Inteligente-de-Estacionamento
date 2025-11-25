@@ -1,0 +1,188 @@
+.conteinerGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--azul-claro);
+    grid-template-columns: 350px 200px 1fr;
+    grid-template-rows: 80px 200px 1fr;
+    grid-template-areas: 
+        'poster titulo titulo'
+        'poster dadosFilme dadosFilme'
+        'poster avaliacaoBotoes avaliacaoCampos';
+}
+
+.posterGrid {
+    grid-area: poster;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloGrid {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dadosFilmeGrid {
+    grid-area: dadosFilme;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 30px 0px 10px;
+}
+
+.avaliacaoBotoesGrid {
+    grid-area: avaliacaoBotoes;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.avaliacaoCamposGrid {
+    grid-area: avaliacaoCampos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 30px 5px 5px;
+}
+
+
+.poster {
+    height: 450px;
+    border: 2px solid var(--azul-claro);
+    border-radius: 10px;
+}
+
+.fechar {
+    position: fixed;
+    font-size: 1.5rem;
+    top: 15%;
+    left: 95%;
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ano {
+    margin-bottom: 20px;   
+}
+
+.sinopseTitulo {
+    margin-bottom: 5px;
+}
+
+.sinopse {
+    text-align: justify;  
+    margin-bottom: 20px;   
+}
+
+.conteinerOpcoes {
+    border: 0px;
+    background-color: var(--cinza-escuro2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--cinza-escuro1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcaoRotulo {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.conteinerAvaliacaoCampos {
+    background-color: var(--cinza-escuro2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conteinerAvaliacaoCamposAlinhamento {
+    display: flex;
+    flex-direction: row;
+}
+
+.dataConteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza-escuro1);
+    color: var(--azul-claro);
+    margin-bottom: 10px;   
+    padding: 10px;    
+    width: 50%; 
+    border-radius: 10px;
+}
+
+.data {
+    background-color: var(--cinza-escuro1);
+    color: var(--azul-claro);
+    margin-left: 10px;  
+    border: 0px;
+}
+
+.conteinerEstrelas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza-escuro1);
+    margin: 0px 0px 10px 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.conteinerEstrelasRotulo {
+    margin-right: 10px;
+}
+
+.comentario {
+    width: 100%; 
+    height: 100px;   
+    background-color: var(--cinza-escuro1);
+    color: var(--azul-claro);
+    border: 0px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+.botaoConteiner {
+    width: 100%;
+    text-align: end;
+}
+
+.botao {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--cinza-escuro1);
+    color: var(--azul-claro);
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    cursor: pointer;
+}

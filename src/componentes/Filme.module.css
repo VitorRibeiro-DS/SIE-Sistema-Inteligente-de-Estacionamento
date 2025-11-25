@@ -1,0 +1,21 @@
+.conteiner {
+    width: 100%;
+}
+
+.poster {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.titulo {
+    color: var(--branco);
+    margin-bottom: 4px;
+    font-size: 0.9rem;    
+    font-weight: 400;
+}
+
+.ano {
+    color: var(--branco);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}

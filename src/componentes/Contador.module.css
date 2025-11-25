@@ -1,0 +1,17 @@
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: var(--cinza-escuro2);
+    margin-top: 10px;
+    border: 2px solid var(--azul-claro);
+}
+
+.texto {
+
+    font-weight: 500;
+    color: var(--azul-claro);
+}

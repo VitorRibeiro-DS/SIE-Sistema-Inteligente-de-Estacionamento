@@ -1,0 +1,39 @@
+.gridConteiner {
+    background-color: #6F9CE6;
+    display: grid;
+    min-height: 100vh;
+    gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr 30px;
+    grid-template-areas: 
+        'cabecalho'
+        'conteudo'
+        'rodape';
+}
+
+header {
+    grid-area: cabecalho;
+    background-color: #fff;
+}
+
+/* Área de conteúdo central (sumario, metodologia, resultados, mapa, etc.) */
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding:0rem 1rem 1.5rem 1rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* Normalize section blocks inside the main content */
+.conteudo > section {
+    background: transparent;
+    padding: 0;
+}
+
+footer {
+    grid-area: rodape;
+    background-color: #fff;
+}

@@ -1,0 +1,74 @@
+.conteiner {
+    background: linear-gradient(to right, var(--cinza-escuro2) 0%, var(--cinza-claro)  100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.imagemCabecalho {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.conteinerUsuario {
+    background: linear-gradient(to right, var(--cinza-escuro2) 0%, var(--cinza-claro)  100%);
+    margin: -3rem 0px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoUsuario {
+    width: clamp(56px, 12vw, 85px);
+    height: clamp(56px, 12vw, 85px);
+    border-radius: 8px;
+    border: 3px solid var(--azul-claro);
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.nomeUsuario {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--azul-claro);
+}
+
+.conteinerBotao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--azul-claro);
+    color: var(--azul-claro);
+    font-weight: 400;
+    width: 90%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: color 0.1s background-color 0.1s;
+}
+
+.botao:hover {
+    background-color: var(--cinza-escuro2);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.icone {
+    margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+    .conteinerUsuario { margin: -2rem 0 1rem 0; }
+    .botao { width: 100%; padding: 6px; font-size: 0.95rem; }
+}

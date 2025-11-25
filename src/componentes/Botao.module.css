@@ -1,0 +1,9 @@
+.conteiner {
+    background-color: var(--cinza-escuro2);
+    color: var(--branco);
+    width: 150px;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+}

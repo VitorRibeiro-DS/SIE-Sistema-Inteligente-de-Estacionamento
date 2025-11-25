@@ -1,0 +1,100 @@
+:root {
+    --cinza-claro1: #adb5bd;
+    --cinza-claro: #404756;
+    --cinza-escuro1: #23272F;
+    --cinza-escuro2: #191C22;
+    --azul-claro: #58C4DC;
+    --preto: #000;
+    --branco: #e9ecef;
+    --laranja: #ffa200;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Responsive helpers and breakpoints */
+:root {
+    --bp-sm: 480px;
+    --bp-md: 768px;
+    --bp-lg: 1024px;
+    --header-height: 75px;
+}
+
+html {
+    /* fluid base font-size (mobile-first) */
+    font-size: clamp(14px, 1.6vw, 18px);
+}
+
+body {
+    background: #ffffff;
+    color: var(--cinza-escuro1);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding-top: var(--header-height); /* leave space for fixed header */
+}
+
+/* Make images and media scale down on small screens */
+img, picture, video, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* A centered page container utility */
+.page-container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Adjust header height at breakpoints */
+@media (max-width: 480px) {
+    :root { --header-height: 60px; }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    :root { --header-height: 68px; }
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+body, input, textarea, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
